@@ -1,9 +1,9 @@
-### Trabajo ev2 para Aplicaciones Moviles de IOT
+## Trabajo ev2 para Aplicaciones Moviles de IOT
 
-## En Filezilla los codigos integrados para compatibilizar con el raspberry pi(backend)
+### Filezilla Archivos, para Raspberry pi(backend)
 
 
-#buscar_usuario.php
+# buscar_usuario.php
 
 ```php
    <?php
@@ -25,5 +25,33 @@
     }
 
     echo json_encode($datos);
+    ?>
+   ```
+
+# cn.php
+```php
+    <?php
+    $c=mysqli_connect("database-2.cjz0nbxwablh.us-east-1.rds.amazonaws.com","pi","a12348765","EVA2");
+
+    ?>
+   ```
+
+# ingreso.php
+```php
+    <?php
+    $usuario = $_GET["usuario"];
+    $contrasena = $_GET["contrasena"];
+
+    include("cn.php");
+
+    // Se eliminó el campo 'id' de la consulta para que MySQL lo autoincremente solo
+    $q = mysqli_query($c,"INSERT INTO usuarios (usuario, contrasena) VALUES ('$usuario', '$contrasena')");
+
+    if($q){
+        echo "Registro insertado exitoso";
+    }
+    else{
+        echo "Fallo en el registro: " . mysqli_error($c);
+    }
     ?>
    ```
