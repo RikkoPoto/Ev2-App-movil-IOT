@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `usuario` varchar(20) NOT NULL,
-  `contrasenusuariosusuariosesa` varchar(20) NOT NULL
+  `contrasena` varchar(20) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
