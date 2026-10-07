@@ -1,5 +1,6 @@
 # Trabajo ev2 para Aplicaciones Moviles de IOT
 
+### Adjunto tabla de sql (usuarios.sql) en el proyecto
 ## Filezilla Archivos, para Raspberry pi(backend)
 
 ```
