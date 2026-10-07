@@ -1,9 +1,9 @@
-## Trabajo ev2 para Aplicaciones Moviles de IOT
+# Trabajo ev2 para Aplicaciones Moviles de IOT
 
-### Filezilla Archivos, para Raspberry pi(backend)
+## Filezilla Archivos, para Raspberry pi(backend)
 
 
-# buscar_usuario.php
+### buscar_usuario.php
 
 ```php
    <?php
@@ -28,7 +28,7 @@
     ?>
    ```
 
-# cn.php
+### cn.php
 ```php
     <?php
     $c=mysqli_connect("database-2.cjz0nbxwablh.us-east-1.rds.amazonaws.com","pi","a12348765","EVA2");
@@ -36,7 +36,7 @@
     ?>
    ```
 
-# ingreso.php
+### ingreso.php
 ```php
     <?php
     $usuario = $_GET["usuario"];
