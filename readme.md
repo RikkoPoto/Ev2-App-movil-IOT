@@ -2,6 +2,11 @@
 
 ## Filezilla Archivos, para Raspberry pi(backend)
 
+```
+    #RUTA DE RASPBERRY 
+
+    /var/www/html/eva2
+   ```
 
 ### buscar_usuario.php
 
