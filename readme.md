@@ -2,6 +2,9 @@
 
 ## En Filezilla los codigos integrados para compatibilizar con el raspberry pi(backend)
 
+
+#buscar_usuario.php
+
 ```php
    <?php
     include 'cn.php';
